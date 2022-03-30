@@ -44,6 +44,7 @@ class AppAssets {
   String icPhone = 'assets/app/icons/ic_phone.png';
   String icProfilePlaceholder = 'assets/app/icons/ic_profile_placeholder.png';
   String icSuggestion = 'assets/app/icons/ic_suggestion.png';
+  String icNetflixLogo = 'assets/app/icons/ic_netflix_logo.png';
 
 
 ///#endregion

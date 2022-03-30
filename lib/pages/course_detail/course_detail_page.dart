@@ -163,7 +163,7 @@ class _CourseDetailPageState extends PageStateful<CourseDetailPage>
                   borderRadius: BorderRadius.circular(20.W),
                   image: const DecorationImage(
                     image: NetworkImage(
-                      'https://github.com/flutterbytes/flutter_glassmorphism/blob/master/assets/images/bg.jpg?raw=true',
+                      'https://github.com/flutterbytes/flutter_glassmorphism/blob/master/assets/app/icons/bg.jpg?raw=true',
                     ),
                     fit: BoxFit.cover,
                   )),

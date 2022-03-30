@@ -135,7 +135,7 @@ void main() {
                 GlobalWidgetsLocalizations.delegate,
               ],
               home: (appRoute.generateRoute(
-                          const RouteSettings(name: AppRoute.routeLogin))
+                          const RouteSettings(name: AppRoute.routeHome))
                       as MaterialPageRoute<dynamic>)
                   .builder(context),
               onGenerateRoute: appRoute.generateRoute,

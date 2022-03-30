@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:nft/generated/l10n.dart';
+import 'package:nft/pages/chat_ui/chat/chat_provider.dart';
+import 'package:nft/pages/chat_ui/image_detail/image_detail_provider.dart';
 import 'package:nft/pages/home/home_provider.dart';
 import 'package:nft/pages/login/login_provider.dart';
+import 'package:nft/pages/netflix_clone/home/home_provider.dart';
 import 'package:nft/services/app/app_dialog.dart';
 import 'package:nft/services/app/app_loading.dart';
 import 'package:nft/services/app/auth_provider.dart';
@@ -56,6 +59,12 @@ Future<void> myMain() async {
                 )),
         ChangeNotifierProvider<LoginProvider>(
             create: (BuildContext context) => LoginProvider()),
+        ChangeNotifierProvider<NetflixHomeProvider>(
+            create: (BuildContext context) => NetflixHomeProvider()),
+        ChangeNotifierProvider<ChatProvider>(
+            create: (BuildContext context) => ChatProvider()),
+        ChangeNotifierProvider<ImageDetailProvider>(
+            create: (BuildContext context) => ImageDetailProvider()),
       ],
       child: const MyApp(),
     ),
@@ -110,7 +119,7 @@ class _MyAppState extends State<MyApp> {
       ///            const RouteSettings(name: AppRoute.rootPageRoute))
       ///        as MaterialPageRoute<dynamic>)
       ///    .builder(context),
-      initialRoute: AppRoute.routeCourseList,
+      initialRoute: AppRoute.routeNetflixRoot,
       onGenerateRoute: appRoute.generateRoute,
       navigatorObservers: <NavigatorObserver>[appRoute.routeObserver],
     );
